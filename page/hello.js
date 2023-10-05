@@ -4,20 +4,20 @@ import React from 'react';
 
 const Hello = ({ navigation }) => {
     const handleMasukPress = () => {
-      navigation.navigate('MainPage');
+      navigation.navigate('Telegram');
     };
   return (
     <View style={styles.container}>
     <View style={styles.header}>
       <Image
-        source={require('./assets/telegram.png')} // Ganti dengan lokasi logo Telegram Anda
+        source={require('./../assets/telegram.png')} // Ganti dengan lokasi logo Telegram Anda
         style={styles.logo}
       />
       <Text style={styles.title}>Telegram</Text>
     </View>
     <View style={styles.content}>
       <Text style={styles.subtitle}>Pesan yang Aman dan Cepat</Text>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button } onPress={handleMasukPress}>
         <Text style={styles.buttonText}>Masuk</Text>
       </TouchableOpacity>
     </View>
